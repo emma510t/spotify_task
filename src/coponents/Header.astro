@@ -1,0 +1,28 @@
+---
+---
+
+<header>
+  <div>
+    <img src="/icons/back-btn.svg" alt="back button" />
+    <img src="/icons/forward-btn.svg" alt="forward button" />
+  </div>
+  <div><slot /></div>
+</header>
+
+<style>
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 16px 30px 10px;
+    position: fixed;
+    width: 83%;
+    opacity: 0.8;
+  }
+  img {
+    width: 2rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+  }
+</style>
