@@ -1,12 +1,19 @@
 ---
+import Button from "../coponents/Button.astro";
+import Searchbar from "../coponents/Searchbar.astro";
 ---
 
+<!-- {hasSearch && <input type="text" />} -->
 <header>
   <div>
     <img src="/icons/back-btn.svg" alt="back button" />
     <img src="/icons/forward-btn.svg" alt="forward button" />
+    <Searchbar />
   </div>
-  <div><slot /></div>
+  <div>
+    <Button text="Sign up" />
+    <Button text="Log in" />
+  </div>
 </header>
 
 <style>

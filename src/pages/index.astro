@@ -1,65 +1,43 @@
 ---
 import "../styles/style.css";
-import Button from "../coponents/Button.astro";
+import Mainlayout from "../layouts/Mainlayout.astro";
 import Card from "../coponents/Card.astro";
 import Cardholder from "../coponents/Cardholder.astro";
-import Header from "../coponents/Header.astro";
-import Navigatio from "../coponents/Navigatio.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Navigatio>
-      <Button text="English" />
-    </Navigatio>
-    <main>
-      <Header>
-        <Button text="Sign up" />
-        <Button text="Log in" />
-      </Header>
-      <div class="mainsec">
-        <Cardholder header="Focus">
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=500B67FB" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=A89D0DE6" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=225E6693" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=9D9539E7" alt="et billede" />
-          </Card>
-        </Cardholder>
-        <Cardholder header="Spotify Playlist">
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=BDC01094" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=7F5AE56A" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=4F32C4CF" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=B0E33EF4" alt="et billede" />
-          </Card>
-          <Card header="enoverskrift" text="Entekst">
-            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=2D297A22" alt="et billede" />
-          </Card>
-        </Cardholder>
-      </div>
-    </main>
-  </body>
-</html>
+<Mainlayout title="Home">
+  <Cardholder header="Focus">
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=500B67FB" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=A89D0DE6" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=225E6693" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=9D9539E7" alt="et billede" />
+    </Card>
+  </Cardholder>
+  <Cardholder header="Spotify Playlist">
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=BDC01094" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=7F5AE56A" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=4F32C4CF" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=B0E33EF4" alt="et billede" />
+    </Card>
+    <Card header="enoverskrift" text="Entekst">
+      <img src="https://api.lorem.space/image/album?w=150&h=150&hash=2D297A22" alt="et billede" />
+    </Card>
+  </Cardholder>
+</Mainlayout>

@@ -1,0 +1,25 @@
+---
+import Button from "../coponents/Button.astro";
+import Header from "../coponents/Header.astro";
+import Navigatio from "../coponents/Navigatio.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navigatio>
+      <Button text="English" />
+    </Navigatio>
+    <main>
+      <Header />
+      <div class="mainsec"><slot /></div>
+    </main>
+  </body>
+</html>

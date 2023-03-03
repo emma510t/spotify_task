@@ -2,10 +2,10 @@
 ---
 
 <nav>
-  <a href="#"><img src="/icons/logo.svg" alt="logo" /></a>
+  <a href="#" class="block"><img src="/icons/logo.svg" alt="logo" /></a>
   <ul>
-    <li><a href="#"><img src="/icons/home-filled.svg" alt="icon" />Home</a></li>
-    <li><a href="#"><img src="/icons/search-icon.svg" alt="icon" />Search</a></li>
+    <li><a href="/"><img src="/icons/home-filled.svg" alt="icon" />Home</a></li>
+    <li><a href="/search"><img src="/icons/search-icon.svg" alt="icon" />Search</a></li>
     <li><a href="#"><img src="/icons/library-icon.svg" alt="icon" />Your Library</a></li>
   </ul>
   <div>
@@ -13,7 +13,7 @@
     <a href="#"><img src="/icons/heart-icon.svg" alt="icon" />Liked Songs</a>
   </div>
   <div>
-    <a href="#">Cookies</a>
+    <a href="#" class="block">Cookies</a>
     <slot />
   </div>
 </nav>
@@ -21,5 +21,15 @@
 <style>
   nav {
     background-color: ghostwhite;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+  }
+  .block {
+    display: block;
   }
 </style>

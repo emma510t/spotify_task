@@ -1,0 +1,21 @@
+---
+const { header } = Astro.props;
+---
+
+<article>
+  <h3>{header}</h3>
+</article>
+
+<style>
+  article {
+    background-color: rgb(224, 80, 145);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+  }
+  h3 {
+    color: white;
+    font-size: 1.5rem;
+  }
+</style>
